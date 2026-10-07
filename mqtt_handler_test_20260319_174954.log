@@ -1,0 +1,34 @@
+2026-03-19 17:49:55,829 | WARNING | AI engine missing detect_anomaly, using basic detector
+2026-03-19 17:49:55,829 | WARNING | Alert bot missing send_alert, using fallback
+2026-03-19 17:49:55,829 | WARNING | Alert bot missing send_fall_alert, using fallback
+Exception ignored in: <function Client.__del__ at 0x000001729758E2A0>
+Traceback (most recent call last):
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 874, in __del__
+    self._reset_sockets()
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 1133, in _reset_sockets
+    self._sock_close()
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 1119, in _sock_close
+    if not self._sock:
+           ^^^^^^^^^^
+AttributeError: 'Client' object has no attribute '_sock'
+2026-03-19 17:49:55,835 | ERROR | [MQTT] Fatal error: Client.__init__() missing 1 required positional argument: 'callback_api_version'
+Traceback (most recent call last):
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\server\mqtt_handler.py", line 254, in <module>
+    start_mqtt()
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\server\mqtt_handler.py", line 246, in start_mqtt
+    client = build_client()
+             ^^^^^^^^^^^^^^
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\server\mqtt_handler.py", line 235, in build_client
+    client = mqtt.Client(client_id=CLIENT_ID, protocol=mqtt.MQTTv311)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() missing 1 required positional argument: 'callback_api_version'
+Traceback (most recent call last):
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\server\mqtt_handler.py", line 254, in <module>
+    start_mqtt()
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\server\mqtt_handler.py", line 246, in start_mqtt
+    client = build_client()
+             ^^^^^^^^^^^^^^
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\server\mqtt_handler.py", line 235, in build_client
+    client = mqtt.Client(client_id=CLIENT_ID, protocol=mqtt.MQTTv311)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() missing 1 required positional argument: 'callback_api_version'

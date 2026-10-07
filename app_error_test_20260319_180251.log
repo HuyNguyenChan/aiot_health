@@ -1,0 +1,18 @@
+2026-03-19 18:02:52,027 | WARNING | AI engine missing detect_anomaly, using basic detector
+2026-03-19 18:02:52,027 | WARNING | Alert bot missing send_alert, using fallback
+2026-03-19 18:02:52,027 | WARNING | Alert bot missing send_fall_alert, using fallback
+2026-03-19 18:02:52,043 | INFO | MQTT subscriber started in background thread
+2026-03-19 18:02:52,057 | INFO | [MQTT] Connecting to 5c8137ba9bc24241bbe92500a0ab993d.s1.eu.hivemq.cloud:8883 ...
+ * Serving Flask app 'app'
+ * Debug mode: on
+2026-03-19 18:02:52,084 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.32:5000
+2026-03-19 18:02:52,121 | INFO | [33mPress CTRL+C to quit[0m
+2026-03-19 18:02:52,334 | INFO | 127.0.0.1 - - [19/Mar/2026 18:02:52] "GET /api/health/status HTTP/1.1" 200 -
+2026-03-19 18:02:53,256 | INFO | 127.0.0.1 - - [19/Mar/2026 18:02:53] "[33mGET /api/health/unknown_device/latest HTTP/1.1[0m" 404 -
+2026-03-19 18:02:53,273 | INFO | 127.0.0.1 - - [19/Mar/2026 18:02:53] "[31m[1mPOST /api/medicine/test/schedule HTTP/1.1[0m" 400 -
+2026-03-19 18:02:53,273 | INFO | [MQTT] Connected to 5c8137ba9bc24241bbe92500a0ab993d.s1.eu.hivemq.cloud:8883
+2026-03-19 18:02:53,273 | INFO | [MQTT] Subscribed: health/+/data
+2026-03-19 18:02:53,273 | INFO | [MQTT] Subscribed: health/+/medicine

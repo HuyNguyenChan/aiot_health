@@ -1,0 +1,12 @@
+.env
+esp32_firmware/include/secrets.h
+server/firebase_key.json
+*.pkl
+*.h5
+.venv/
+__pycache__/
+*.pyc
+.pio/
+data/raw/
+models/
+.DS_Store

@@ -1,0 +1,15 @@
+2026-03-19 17:50:27,802 | WARNING | AI engine missing detect_anomaly, using basic detector
+2026-03-19 17:50:27,805 | WARNING | Alert bot missing send_alert, using fallback
+2026-03-19 17:50:27,805 | WARNING | Alert bot missing send_fall_alert, using fallback
+d:\HOCTAP\N3\K2\DACN1\aiot_health\server\mqtt_handler.py:235: DeprecationWarning: Callback API version 1 is deprecated, update to latest version
+  client = mqtt.Client(
+2026-03-19 17:50:27,841 | INFO | [MQTT] Connecting to 5c8137ba9bc24241bbe92500a0ab993d.s1.eu.hivemq.cloud:8883 ...
+2026-03-19 17:50:29,088 | INFO | [MQTT] Connected to 5c8137ba9bc24241bbe92500a0ab993d.s1.eu.hivemq.cloud:8883
+2026-03-19 17:50:29,088 | INFO | [MQTT] Subscribed: health/+/data
+2026-03-19 17:50:29,089 | INFO | [MQTT] Subscribed: health/+/medicine
+2026-03-19 17:50:29,350 | INFO | [MQTT] Received topic=health/patient_001/data payload={"device_id": "patient_001", "ts": 1773903004, "heart_rate": 0, "spo2": 0, "temperature": 36.25, "accel_x": -0.136963, "accel_y": -0.001953, "accel_z": 0.979248, "fall": false, "edge_alert": false, "alert_reason": "", "status": "Normal", "screen": "main", "medicine_active": false, "medicine_label": "Thuoc", "measure_mode": "Lien tuc", "measure_interval_ms": 5000}
+2026-03-19 17:50:29,351 | INFO | [DATA] patient_001 | HR=0 SpO2=0 Temp=36.25 Fall=False Edge=False
+2026-03-19 17:50:34,050 | INFO | [MQTT] Received topic=health/test/data payload={"device_id": "test", "ts": 1773917433, "heart_rate": 88, "spo2": 97, "temperature": 36.9, "accel_x": 0.01, "accel_y": -0.02, "accel_z": 0.98, "fall": false, "edge_alert": false, "alert_reason": ""}
+2026-03-19 17:50:34,050 | INFO | [DATA] test | HR=88 SpO2=97 Temp=36.9 Fall=False Edge=False
+2026-03-19 17:50:34,293 | INFO | [MQTT] Received topic=health/test/medicine payload={"device_id": "test", "type": "medicine_confirmed", "label": "Vitamin C"}
+2026-03-19 17:50:34,498 | INFO | [MEDICINE] test | Vitamin C | confirmed=True

@@ -1,0 +1,43 @@
+{
+  "raw_rows": 1020,
+  "real_clean_rows": 1020,
+  "training_rows": 1740,
+  "train_rows": 1392,
+  "test_rows": 348,
+  "feature_columns": [
+    "heart_rate",
+    "spo2",
+    "temperature",
+    "accel_mag",
+    "hrv_proxy",
+    "hr_mean_5",
+    "spo2_drop",
+    "ecg_raw_avg",
+    "ecg_mv",
+    "ecg_lead_off"
+  ],
+  "label_counts": {
+    "normal_rest": 220,
+    "normal_light": 200,
+    "normal_moderate": 200,
+    "stress": 200,
+    "anomaly_high_hr": 190,
+    "anomaly_low_spo2": 190,
+    "normal_morning": 180,
+    "normal_postmeal": 180,
+    "fall": 180
+  },
+  "source_counts": {
+    "real": 1020,
+    "synthetic_normal_rest": 80,
+    "synthetic_normal_light": 80,
+    "synthetic_normal_moderate": 80,
+    "synthetic_normal_morning": 80,
+    "synthetic_normal_postmeal": 80,
+    "synthetic_stress": 80,
+    "synthetic_anomaly_high_hr": 80,
+    "synthetic_anomaly_low_spo2": 80,
+    "synthetic_fall": 80
+  },
+  "note": "Synthetic rows for labels 0-8 are generated from collected baseline data for demo training. After the hardware update, heart_rate is expected from AD8232 and SpO2 from MAX30102. Keep collecting real rows for every label and regenerate these files when available."
+}

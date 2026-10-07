@@ -1,0 +1,57 @@
+2026-03-19 17:52:06,624 | WARNING | AI engine missing detect_anomaly, using basic detector
+2026-03-19 17:52:06,627 | WARNING | Alert bot missing send_alert, using fallback
+2026-03-19 17:52:06,627 | WARNING | Alert bot missing send_fall_alert, using fallback
+2026-03-19 17:52:06,675 | INFO | [MQTT] Connecting to 5c8137ba9bc24241bbe92500a0ab993d.s1.eu.hivemq.cloud:8883 ...
+2026-03-19 17:52:07,769 | ERROR | [MQTT] Fatal error: int() argument must be a string, a bytes-like object or a real number, not 'ReasonCode'
+Traceback (most recent call last):
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\server\mqtt_handler.py", line 270, in <module>
+    start_mqtt()
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\server\mqtt_handler.py", line 265, in start_mqtt
+    client.loop_forever(retry_first_connection=True)
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 2291, in loop_forever
+    rc = self._loop(timeout)
+         ^^^^^^^^^^^^^^^^^^^
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 1680, in _loop
+    rc = self.loop_read()
+         ^^^^^^^^^^^^^^^^
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 2094, in loop_read
+    rc = self._packet_read()
+         ^^^^^^^^^^^^^^^^^^^
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 3137, in _packet_read
+    rc = self._packet_handle()
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 3809, in _packet_handle
+    return self._handle_connack()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 3929, in _handle_connack
+    on_connect(
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\server\mqtt_handler.py", line 202, in on_connect
+    if int(reason_code) != 0:
+       ^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'ReasonCode'
+Traceback (most recent call last):
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\server\mqtt_handler.py", line 270, in <module>
+    start_mqtt()
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\server\mqtt_handler.py", line 265, in start_mqtt
+    client.loop_forever(retry_first_connection=True)
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 2291, in loop_forever
+    rc = self._loop(timeout)
+         ^^^^^^^^^^^^^^^^^^^
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 1680, in _loop
+    rc = self.loop_read()
+         ^^^^^^^^^^^^^^^^
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 2094, in loop_read
+    rc = self._packet_read()
+         ^^^^^^^^^^^^^^^^^^^
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 3137, in _packet_read
+    rc = self._packet_handle()
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 3809, in _packet_handle
+    return self._handle_connack()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\.venv\Lib\site-packages\paho\mqtt\client.py", line 3929, in _handle_connack
+    on_connect(
+  File "d:\HOCTAP\N3\K2\DACN1\aiot_health\server\mqtt_handler.py", line 202, in on_connect
+    if int(reason_code) != 0:
+       ^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'ReasonCode'

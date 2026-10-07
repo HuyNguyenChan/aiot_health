@@ -1,0 +1,71 @@
+{
+  "dataset": "ai_training\\colab_export\\health_data_augmented.csv",
+  "features": [
+    "heart_rate",
+    "spo2",
+    "temperature",
+    "hr_rolling_mean",
+    "hr_rolling_std",
+    "spo2_change",
+    "accel_mag"
+  ],
+  "rows": 4080,
+  "subjects": [
+    "subject_01",
+    "subject_02",
+    "subject_03",
+    "subject_04"
+  ],
+  "loso": {
+    "results": [
+      {
+        "excluded_subject": "subject_01",
+        "f1": 0.8330871491875923
+      },
+      {
+        "excluded_subject": "subject_02",
+        "f1": 0.8360902255639098
+      },
+      {
+        "excluded_subject": "subject_03",
+        "f1": 0.8434108527131783
+      },
+      {
+        "excluded_subject": "subject_04",
+        "f1": 0.833592534992224
+      }
+    ],
+    "f1_mean": 0.836545190614226,
+    "f1_std": 0.004123728136785152
+  },
+  "model_path": "ai_training\\colab_export\\isolation_forest.pkl",
+  "scaler_path": "ai_training\\colab_export\\scaler.pkl",
+  "test_cases": [
+    {
+      "name": "Binh thuong",
+      "status": "Binh thuong",
+      "score": 0.09673298893479088
+    },
+    {
+      "name": "Nhip tim cao",
+      "status": "Binh thuong",
+      "score": 0.018473791778877313
+    },
+    {
+      "name": "SpO2 thap",
+      "status": "Binh thuong",
+      "score": 0.020651978117505965
+    },
+    {
+      "name": "Sot cao",
+      "status": "Binh thuong",
+      "score": 0.05196815219441481
+    },
+    {
+      "name": "Phat hien nga",
+      "status": "Binh thuong",
+      "score": 0.03327580733516611
+    }
+  ],
+  "note": "Saved under ai_training/colab_export to match Notebook 02 without overwriting production models that use the ECG feature schema."
+}
